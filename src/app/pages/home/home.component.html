@@ -20,10 +20,13 @@
   </div>
   <div class="img-content">
     @for (r of recetasUrls; track $index) {
-    <mat-card  [style.background-image]="'url(' +r.url +')'" appearance="outlined">
-        <mat-card-header>
-            <mat-card-title> {{r.name}}</mat-card-title>
-          </mat-card-header>
+    <mat-card
+      [style.background-image]="'url(' + r.url + ')'"
+      appearance="outlined"
+    >
+      <mat-card-header>
+        <mat-card-title> {{ r.name }}</mat-card-title>
+      </mat-card-header>
     </mat-card>
     }
   </div>

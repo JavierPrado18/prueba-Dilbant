@@ -26,15 +26,14 @@ $tablet-width: 1024px;
   align-items: center;
   gap: 16px;
 
-  .menu-mobile{
-    
+  .menu-mobile {
     display: none;
     width: 100%;
-    h2{
+    h2 {
       font-size: 1.5rem;
       display: inline-block;
     }
-    button{
+    button {
       display: inline-block;
     }
     @include mobile {
@@ -42,22 +41,22 @@ $tablet-width: 1024px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-     }
+    }
   }
   h2 {
-    font-size: 2rem; 
+    font-size: 2rem;
     font-family: Roboto;
     font-weight: 800;
     margin: 0;
 
     @include mobile {
-     display: none;
+      display: none;
     }
   }
-  button{
+  button {
     @include mobile {
       display: none;
-     }
+    }
   }
   .toolbar-spacer {
     flex: 1 1 auto;
@@ -72,8 +71,7 @@ $tablet-width: 1024px;
 
 main {
   position: relative;
-  min-height: 100vh; 
-
+  min-height: 100vh;
 }
 
 footer {
@@ -105,7 +103,7 @@ footer {
 
     article {
       flex: 1;
-      width:25%;
+      width: 25%;
 
       @include tablet {
         width: 50%;

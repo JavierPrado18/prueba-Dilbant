@@ -1,59 +1,30 @@
-# PruebaDilvant
+# 📋 Prueba Técnica Dilvant  
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+Este proyecto fue desarrollado utilizando [Angular CLI](https://github.com/angular/angular-cli) versión 19.0.2.  
+El objetivo es demostrar habilidades en el desarrollo de aplicaciones web modernas utilizando tecnologías avanzadas.  
 
-## Development server
+## 🚀 Tecnologías utilizadas  
 
-To start a local development server, run:
+El proyecto hace uso de las siguientes tecnologías:  
 
-```bash
-ng serve
-```
+- **Angular** - Framework para el desarrollo de aplicaciones web basadas en componentes.  
+-  **Angular Material** - Librería para componentes de interfaz de usuario con diseño Material Design.  
+- 🎨 **SCSS (Sass)** - Lenguaje para hojas de estilo, que permite un diseño más modular y escalable.  
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## ⚡ Cómo iniciar el proyecto en un servidor local  
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Para correr el proyecto en un entorno local de desarrollo, sigue los siguientes pasos:  
 
-```bash
-ng generate component component-name
-```
+1. Abre una terminal en el directorio raíz del proyecto.  
+2. Ejecuta el siguiente comando para instalar las dependencias de npm:  
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+   ```bash
+   npm install
+   ```
+3. Ejecuta el siguiente comando para ver el proyecto:  
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   ng serve -o
+   ```

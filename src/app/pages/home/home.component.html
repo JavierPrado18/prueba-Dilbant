@@ -1,0 +1,30 @@
+<section class="descricion-content">
+  <div class="background"></div>
+  <div class="title" style="z-index: 10">
+    <h1>Haz Crecer tu amor por la comida peruana.</h1>
+    <p>Sumergete en la cultura peruana a traves de nuestra delicosa comida</p>
+    <button mat-stroked-button>Nuestra nueva carta</button>
+  </div>
+  <mat-card appearance="outlined">
+    <img mat-card-image [src]="restauranteUrl" alt="Restaurante peruano" />
+  </mat-card>
+</section>
+<section>
+  <div class="subtitle-content">
+    <h2>Recetas populares</h2>
+    <button mat-button>
+      <div style="display: flex; align-items: center">
+        Explora todos los Platos<mat-icon>arrow_right_alt</mat-icon>
+      </div>
+    </button>
+  </div>
+  <div class="img-content">
+    @for (r of recetasUrls; track $index) {
+    <mat-card  [style.background-image]="'url(' +r.url +')'" appearance="outlined">
+        <mat-card-header>
+            <mat-card-title> {{r.name}}</mat-card-title>
+          </mat-card-header>
+    </mat-card>
+    }
+  </div>
+</section>

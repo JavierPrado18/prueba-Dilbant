@@ -1,0 +1,66 @@
+<mat-toolbar>
+  <div class="menu-mobile">
+    <h2>Dilvant</h2> 
+    <button style="color: white" mat-button [matMenuTriggerFor]="menu">
+      <div style="display: flex; align-items: center">
+        Reservas<mat-icon>keyboard_arrow_down</mat-icon>
+      </div>
+    </button>
+    <button mat-flat-button>Contacto</button>
+
+    
+  </div>
+  <h2>Dilvant</h2>
+  <span class="toolbar-spacer"></span>
+  <mat-tab-group
+    [selectedIndex]="currentIndex"
+    animationDuration="0ms"
+    (selectedTabChange)="onTabChange($event)"
+  >
+    <mat-tab label="Inicio" routerLink="/pages"></mat-tab>
+    <mat-tab label="Menú" routerLink="/pages/menu"></mat-tab>
+    <mat-tab label="Nosotros"></mat-tab>
+  </mat-tab-group>
+
+  <button style="color: white" mat-button [matMenuTriggerFor]="menu">
+    <div style="display: flex; align-items: center">
+      Reservas<mat-icon>keyboard_arrow_down</mat-icon>
+    </div>
+  </button>
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item>Reserva 1</button>
+    <button mat-menu-item>Reserva 2</button>
+  </mat-menu>
+  <span class="toolbar-spacer"></span>
+  <button class="btn-contacto" mat-flat-button>Contacto</button>
+</mat-toolbar>
+<main>
+  <router-outlet></router-outlet>
+  <footer>
+    <section>
+      <h4>Dilvant</h4>
+      <article>
+        <h5>Platos Estrella</h5>
+        <ul>
+          <li>Ceviche</li>
+          <li>Lomo Saltado</li>
+          <li>Causa Rellena</li>
+        </ul>
+      </article>
+      <article>
+        <h5>Contacto</h5>
+        <ul>
+          <li>+51 999 999 999</li>
+          <li>{{ "dilvant.restaurante@gmail.com" }}</li>
+        </ul>
+      </article>
+      <article>
+        <h5>Encuentranos</h5>
+        <ul>
+          <li>Av. Direccion 1</li>
+        </ul>
+      </article>
+    </section>
+    <div>Plantilla Gecha por Dilvant - 2024</div>
+  </footer>
+</main>

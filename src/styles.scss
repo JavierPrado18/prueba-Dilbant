@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+@use "@angular/material" as mat;
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+:root {
+  --backgroud-black: #001405;
+  --letter-white: #ffffff;
+  --yellow: #d4a206;
+  --background-red: #6d0101;
+  @include mat.tabs-overrides(
+    (
+      active-indicator-color: var(--letter-white),
+      divider-color: var(--backgroud-black),
+      inactive-label-text-color: var(--letter-white),
+      active-label-text-color: var(--letter-white),
+      inactive-focus-label-text-color: var(--letter-white),
+      inactive-hover-label-text-color: var(--letter-white),
+      active-focus-label-text-color: var(--letter-white),
+      active-hover-label-text-color: var(--letter-white),
+      active-focus-indicator-color: var(--letter-white),
+      active-hover-indicator-color: var(--letter-white),
+
+    )
+  );
+  @include mat.button-overrides((
+    filled-container-color: var(--yellow),
+    filled-label-text-color: var(--letter-white),
+  ));
+}

@@ -1,0 +1,132 @@
+@use '@angular/material' as mat;
+
+.descricion-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 4%; 
+  justify-content: space-around;
+  min-height: 100vh; 
+  color: var(--letter-white);
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding-top: 140px;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .title{
+    width: 50%;
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem); 
+      line-height: 1.2;
+      word-wrap: break-word;
+      color: var(--letter-white);
+      font-weight: 800;
+  
+      @media (max-width: 768px) {
+        font-size: 2rem;
+        
+      }
+    }
+    
+    p {
+      font-size: clamp(1rem, 3vw, 1.2rem); 
+      font-weight: 400;
+      line-height: 1.5;
+      color: white;
+      word-wrap: break-word;
+  
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        
+      }
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+      
+    }
+  }
+  
+
+  .background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--backgroud-black);
+    clip-path: polygon(100% 0, 100% 80px, 93% 65%, 0 100%, 0 0);
+
+  }
+
+  button {
+    border-color: var(--yellow);
+    color: var(--yellow);
+    font-size: clamp(1rem, 3vw, 1.25rem);
+    line-height: 1.2;
+    padding: 28px 32px;
+    letter-spacing: 0.5px;
+    margin-top: 15px;
+  }
+
+  mat-card {
+    width: 40%;
+    border: none;
+    border-radius: 64px;
+     
+    @media (max-width: 748px) {
+      margin-top: 20px;
+      border-radius: 64px;
+      width: 100%;
+    }
+  }
+}
+
+section {
+  padding: 5%;
+  max-width: 100%; // Ancho completo
+  
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+
+  .subtitle-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    button {
+      color: var(--yellow);
+    }
+  }
+
+  .img-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    margin: auto;
+    gap: 20px;
+
+    mat-card {
+      color: var(--letter-white);
+      height: auto; // Altura automática
+      min-height: 300px; // Altura mínima
+      border: 2px solid var(--backgroud-black);
+
+    background-repeat: no-repeat;
+      width: 100%;
+      border-radius: 12px;
+background-size: cover;
+background-position: center;
+      @media (max-width: 768px) {
+        min-height: 250px;
+      }
+    }
+  }
+}

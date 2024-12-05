@@ -1,0 +1,36 @@
+<section class="temporada-content">
+  <article class="descripcion">
+    <h3>Plato de la Temporada</h3>
+    <p>
+      Descubre el sabor auténtico de Perú con nuestro anticucho de temporada.
+      Este plato, lleno de tradición, combina tiernos trozos de corazón de res
+      marinados en especias, servidos con una salsa de ají y acompañados de
+      papas doradas. Una experiencia culinaria que te transportará a las calles
+      de Lima.
+    </p>
+  </article>
+  <mat-card appearance="outlined">
+    <img mat-card-image [src]="imageAnticuchoUrl" alt="Anticucho peruano" />
+  </mat-card>
+</section>
+<section class="favorito-content">
+  <h3>¿Cómo funciona? Elige tu plato favorito.</h3>
+  <div class="cards">
+    @for (d of descripcions; track $index) {
+    <mat-card appearance="outlined">
+      <mat-card-header>
+        <div
+          mat-card-avatar
+          [style.background-image]="'url(' + d.imgUrl + ')'"
+          class="avatar-image"
+        ></div>
+      </mat-card-header>
+      <mat-card-content>
+        <p>
+          {{ d.descripcion }}
+        </p>
+      </mat-card-content>
+    </mat-card>
+    }
+  </div>
+</section>
